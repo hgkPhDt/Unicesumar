@@ -1,0 +1,17 @@
+Algoritmo ConsumoAgua
+Var 
+	apartamento, i : inteiro
+	consumoAgua, maiorConsumo, metrosCubicos : real
+Início
+	escreva("Digite a quantidade de apartamentos: ")
+	leia(apartamento)
+	Para i de 1 até apartamento passo 1 faça
+		escreva("Digite o consumo de àgua: ")
+		leia(consumoAgua)
+		se (consumoAgua > maiorConsumo) então
+			maiorConsumo <- consumoAgua
+		fim_se
+	fim_para
+	metrosCubicos <- maiorConsumo / 1000.0
+	escreva("O maior consumo é de: ", metrosCubicos, "m³")
+fim

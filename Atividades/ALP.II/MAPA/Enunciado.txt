@@ -1,0 +1,68 @@
+ Questão 1
+
+Caro estudante,
+
+Temos por certo que os desafios sempre contribuem na aquisição de conhecimentos e competências desejadas. Sendo assim, faz-se necessário relacionar o que se aprende com situações reais que podem ser encontradas no cotidiano.
+Nesta atividade, você é convidado a realizar uma atividade para verificar como a disciplina em questão pode contribuir na sua experiência e formação profissional. Por este motivo, nesta atividade discursiva, você é instigado a solucionar um problema voltado para sua área de formação.
+
+Atente-se para as informações e realize um ótimo trabalho!
+
+A vacinação contra o Covid-19 evoluiu muito no ano de 2021. Para 2022 ao que tudo indica doses de reforço serão necessárias para controle da pandemia. Com a ajuda da tecnologia, o controle de vacinas são todas digitalizadas, inclusive a partir de um aplicativo você mesmo pode consultar as vacinas que você tomou.
+
+Imagine então que você trabalha na área de desenvolvimento de software do seu estado, e você foi designado para registrar os dados de aplicação das vacinas. Nesta aplicação a pessoa responsável precisará pegar do paciente as informações como nome, cpf, nome da vacina aplicada, número do lote e a data da aplicação.
+
+Este programa deve ser capaz de cadastrar as informações de aplicação de vacina, que em resumo são:
+    - Código (você fará o controle, não será digitado pelo usuário)
+    - Nome
+    - CPF
+    - Vacina
+    - Data (pode ser tratada como String)
+    - Numero Lote
+
+Logo após o cadastro o programa deverá disponibilizar outros dois recursos, um deles é um relatório geral de aplicação, que trará todas as informações das aplicações em tela no seguinte modelo:
+    Código: 0
+    Nome: Rogerio Napoleao Júnior
+    CPF: 111.111.111-11
+    Vacina: Pfizer
+    Data: 01/05/2022
+    Numero do Lote: 123123123
+    ==================================
+    Código: 1
+    Nome: Joao da Silva
+    CPF: 111.111.111-11
+    Vacina: Coronavac
+    Data: 10/05/2022
+    Numero do Lote: 333222333
+    ==================================
+
+O outro recurso necessário é busca por CPF, ao usuário digitar o CPF o programa deve fazer uma buscar e mostrar em tela apenas o CPF consultado, caso não exista uma informação “CPF não encontrado” deve ser mostrado na tela.
+
+Para controlar este programa deverá ter um menu de opções como abaixo:
+    1 - Cadastrar Vacina
+    2 - Listar Aplicações
+    3 - Consultar por CPF
+    4 - Sair
+Utilize os mais variados recursos aprendidos na disciplina. Seja criativo, não se prenda a uma unica forma de resolver este problema.
+
+Logo após envie o código em C.
+
+A sua atividade MAPA deve ser entregue em um arquivo de código fonte para linguagem C (extensão .c).
+
+* Dicas para realizar a atividade:
+1. Durante as aulas, o professor irá fornecer dicas que podem ser utilizadas para a confecção das suas atividades, sendo assim, é de suma importância participar da aula ao vivo, ou assisti-las
+posteriormente, e
+2. Assista às aulas conceituais da disciplina.
+
+​Orientações:
+• Plágios e cópias indevidas serão penalizadas com nota zero.
+• Não são permitidas correções parciais no decorrer do módulo, pois a interpretação da atividade também faz parte da avaliação.
+• Atenção ao prazo de entrega da atividade. Sugerimos que envie sua atividade antes do prazo final para evitar transtornos e lentidão nos servidores. Evite envio de atividade em cima do prazo.
+
+Boa atividade!
+Algumas funções que serão úteis durante o desenvolvimento do programa:
+ 
+* system(“pause”) – chamada de sistema que “pausa” o programa e o faz aguardar pelo usuário;
+* system(“cls”) – chamada de sistema que limpa os caracteres que foram impressos na tela anteriormente;
+* fflush(stdin) – limpar o buffer do teclado. Essa função deve sempre ser utilizada após ter utilizado alguma função de entrada de dados como o scanf, gets, etc. Isso se dá pois em algumas situações o buffer do teclado mantém “lixo de memória”, prejudicando a próxima operação de entrada do programa;
+* A função setlocale(LC_ALL, "Portuguese") da biblioteca locale.h pode ser útil, caso você queira que os acentos e pontuações da língua portuguesa sejam impressos corretamente.
+

@@ -1,0 +1,66 @@
+Caro estudante,
+
+Temos por certo que os desafios sempre contribuem na aquisição de conhecimentos e competências desejadas. Sendo assim, faz-se necessário relacionar o que se aprende com situações reais que podem ser encontradas no cotidiano.
+Nesta atividade, você é convidado a realizar uma atividade para verificar como a disciplina em questão pode contribuir na sua experiência e formação profissional. Por este motivo, nesta
+atividade discursiva, você é instigado a solucionar um problema voltado para sua área de formação.
+
+Atente-se para as informações e realize um ótimo trabalho!
+ 
+----------------
+
+Construção de um algoritmo para controle de gastos com água em condominios
+ 
+Imagine que você mora em um prédio onde contém diversos apartamentos, e na reunião de condomínio houve uma reclamação por parte dos moradores do gasto excessivo de água, fazendo assim que o custo do condomínio aumentasse. Para isso é preciso identificar o apartamento que mais consumiu para que possa verificar se foi algum vazamento ou outra situação parecida.
+
+Para resolver o problema você se prontificou a criar um algoritmo onde irá ler N marcações de quantidade de litros de água de cada apartamento, no final da leitura deverá mostrar na tela o valor mais alto em metros cúbicos de água que foi consumido.
+  
+Onde:
+- Cada 1000 litros de água representa 1 metro cúbico;
+ 
+O que entregar?
+Faça o algortimo ler uma séria de N marcações em litros, mostrando na tela o maior valor em metro cúbico;
+
+Neste caso: 
+N - representa a quantidade de vezes que será inserido uma marcação de litros gasto, ou seja a quantidade de apartamentos, essa informação deverá ser lida pelo algoritmo.
+    
+*Atenção: o algoritmo deve ser escrito em pseudocódigo (portugol) e submetido para correção em formato txt (documento de texto – notepad) ou doc (documento do Microsoft Word). Algoritmos sem indentação terão desconto em pontuação. Serão avaliadas a corretude semântica e sintática, bem como a eficiência do código.
+
+
+Orientações:
+- A entrega de sua atividade deve ser feita exclusivamente por meio de UM único arquivo nos formatos .DOC ou PDF. 
+- Antes de enviar sua atividade, certifique-se de que respondeu todas as perguntas da atividade e que não deixou de atender nenhum detalhe. Após o envio não serão permitidas alterações. Por favor, não insista.- Sempre que você consultar outros materiais e/ou conteúdos de terceiros, lembre-se de citá-los corretamente atribuindo as devidas autorias, bem como inclua as fontes bibliográficas.
+- Evite compartilhar sua resolução com colegas da turma. A expressão do aprendizado é pessoal e única de cada estudante. Preserve sua autoria e evite transtornos na replicação de sua resposta.
+- A interpretação da atividade faz parte da avaliação. Por este motivo, não são permitidas correções parciais da atividade no decorrer do módulo.
+- Atenção ao PRAZO de entrega da atividade. Sugerimos que envie sua atividade antes do prazo final para evitar transtornos e lentidão nos servidores.
+
+Boa atividade!
+
+
+
+
+
+
+
+programa
+{
+
+	inclua biblioteca Util --> random
+	
+	funcao inicio()
+	{
+		real apartamento[20]
+
+		para(inteiro i = 1; i <= 20; i++){
+
+			inteiro litrosDagua = random.sorteia(1000,20000)
+			real metrosCubicos = litrosDagua / 1000.0
+			apartamento[i] = metrosCubicos
+			
+			
+			escreva("Apartamento "+i+" gastou: "+litrosDagua+"L. Total: "+metrosCubicos+"m³\n")
+
+			
+		}
+
+	}
+}

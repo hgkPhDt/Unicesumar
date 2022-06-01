@@ -1,0 +1,35 @@
+O problema desta questão é bem simples. O programador que desenvolveu este algoritmo, colocou três condicionais IF fazendo com que o computador imprima as três mensagens caso o usuário digitasse uma média abaixo de 5. Se fosse abaixo de 7, então as duas últimas condicionais seriam verdadeiras em suas condicionais e seriam executadas, assim como a ultima condicional que seria acionada caso o valor fosse maior que 7. Esse não é o método correto de se solucionar este problema.
+
+A melhor maneira é usar a expressão condicional completa, qual inclui o IF, ELSE IF e por fim, o ELSE. Sendo IF com a expressão lógica: media < 5. Desta forma o programa irá ler essa condicional, caso a media ultrapasse esse valor de 5 definido na expressão lógica, então ele passaria para o ELSE IF, qual deverá ter o seguinte condicional: media > 5 && media < 7. Dessa forma, dando FALSE para a primeira etapa da expressão condicional, esse será acionado, porém a média do usuário foi 8 então logo essa condicional retornará FALSE, pois 8 é maior que cinco, e também 8 é maior que 7. Ai entramos na tabela verdade, e o uso de conectivos lógicos qual a expressão  só me retornará TRUE, caso a média ficasse entre esses dois valores. Como esse não é o caso, então restou apenas a última etapa do bloco, que é o ELSE e nele não existem expressões lógicas, pois só será executada, caso nenhuma das duas anteriores forem executadas. Sendo assim, nosso usuário recebeu em sua tela a mensagem de aprovado. 
+
+Até poderia explicar como o programa se comportaria com uma média de 5 e 7, mas estou com preguiça pois acabei de chegar do trabalho e a minha cabeça não está funcionando bem (haha). Espero que possa ter mostrado meu entendimento sobre o assunto e que seja suficiente para a conclusão deste desafio. Obrigado.
+
+>> Programa corrigido:
+#include <stdio.h>
+
+int main(int argc, char const *argv[]){
+	float p1, p2, p3, media = 0.0;
+
+	printf("Digite a nota 1\n");
+	scanf("%f", &p1);
+	printf("Digite a nota 2\n");
+	scanf("%f", &p2);
+	printf("Digite a nota 3\n");
+	scanf("%f", &p3);
+
+	media = (p1+p2+p3)/3;
+	printf("Média calculada %f\n", media);
+	
+	if(media < 5){
+		printf("Reprovado\n");
+	}else if(media > 5 && media < 7){
+		printf("Recuperação\n");
+	}
+	else{
+		printf("Aprovado\n");
+	}
+
+return 0;
+}
+
+Ass: Philip Torres.
