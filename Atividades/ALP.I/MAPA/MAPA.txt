@@ -1,0 +1,57 @@
+Algoritmo "AbastecimentoDeAeronave"
+
+// Descrição   : Calcula a quantidade de combustível necessário para levantar voo.
+// Autor(a)    : Philip Torres
+// Data atual  : 9/6/2022
+
+função soma(x,y: real): real
+inicio
+   retorne x+y
+fimfunção
+
+função calcQuantidadeGazoza(x, y: real) : real
+inicio
+   retorne x * y
+fimfunção
+
+função addMargemSeguranca(x: real): real
+inicio
+   retorne x * 1.3
+fimfunção
+
+Var
+   trechoPrincipal, trechoAlternativo, gazozaMaxima, media, gazozaAtual : real
+
+Inicio
+   escreva("Média da aeronáve: ")
+   leia(media)
+   escreva("Capacidade Máxima de combustível: ")
+   leia(gazozaMaxima)
+   escreva("Quantidade de quilômetros do trecho planejado: ")
+   leia(trechoPrincipal)
+   escreva("Quantidade de quilômetros do trecho alternativo: ")
+   leia(trechoAlternativo)
+   escreva("Quantidade de combustível já na aeronave: ")
+   leia(gazozaAtual)
+
+   escreval()
+
+   se(addMargemSeguranca(calcQuantidadeGazoza(media, soma(trechoPrincipal, trechoAlternativo))) > gazozaMaxima) entao
+      escreval("=================================================")
+      escreval("=====Voo Reprovado, reveja seu planejamento!=====")
+      escreval("=================================================")
+      escreval()
+      escreval("A aeronave não comporta combustível necessário para efetuar o voo.")
+   senao
+      escreval("================================================")
+      escreval("=============Voo Aprovado, bom voo!=============")
+      escreval("================================================")
+      escreval()
+      escreval("Trecho principal: ", trechoPrincipal)
+      escreval("Trecho alternativo: ", trechoAlternativo)
+      escreval("Trecho total com a margem de segurança: ",  addMargemSeguranca(soma(trechoPrincipal, trechoAlternativo)))
+      escreval("Quantidade necessária de combustível: ", addMargemSeguranca(calcQuantidadeGazoza(media, soma(trechoPrincipal, trechoAlternativo))))
+      escreval("A aeronave precisa abastecer: ", addMargemSeguranca(calcQuantidadeGazoza(media, soma(trechoPrincipal, trechoAlternativo))) - gazozaAtual)
+   fimse
+
+Fimalgoritmo
