@@ -1,0 +1,44 @@
+Algoritmo "ControleDeGado"
+// ALP I
+//
+// Descrição   : Separa os números impar e par.
+// Autor(a)    : Philip Torres
+// Data atual  : 15/6/2022
+
+
+Var
+   i, op: inteiro
+   impar, par: vetor[1..43] de inteiro
+
+Inicio
+   para i de 1 até 10 faca
+      escreva("Nº do gado: ")
+      leia(op)
+      se((op mod 2) = 0) entao
+         par[i] <- op
+      senao
+         impar[i] <- op
+      fimse
+   fimpara
+
+   i <- 0
+
+   escreval("Nº do gado no pasto 1: ")
+   para i de 1 até 10 faca
+      se(nao par[i] = 0) entao
+         escreva(par[i]," ")
+      fimse
+
+   fimpara
+
+   i <- 0
+   escreval()
+
+   escreval("Nº do gado no pasto 2: ")
+   para i de 1 até 10 faca
+      se(nao impar[i] = 0) entao
+         escreva(impar[i]," ")
+      fimse
+   fimpara
+
+Fimalgoritmo

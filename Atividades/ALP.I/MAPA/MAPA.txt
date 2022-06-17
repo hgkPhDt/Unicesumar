@@ -1,6 +1,8 @@
 Algoritmo "AbastecimentoDeAeronave"
 
 // Descrição   : Calcula a quantidade de combustível necessário para levantar voo.
+// Video       : https://www.youtube.com/watch?v=5Bifk_UaUNE
+// Repositório : https://github.com/hgkPhDt/Unicesumar/blob/master/Atividades/ALP.I/MAPA/MAPA.txt
 // Autor(a)    : Philip Torres
 // Data atual  : 9/6/2022
 

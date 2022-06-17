@@ -1,0 +1,30 @@
+Caro estudante,
+
+Temos por certo que os desafios sempre contribuem na aquisição de conhecimentos e competências desejadas. Sendo assim, faz-se necessário relacionar o que se aprende com situações reais que podem ser encontradas no cotidiano.
+Nesta atividade, você é convidado a verificar como a disciplina em questão pode contribuir à sua experiência e formação profissional. 
+Por este motivo, leia o contexto abaixo atentamente e procure realizar ao que lhe é pedido.
+
+Boa atividade!
+
+----------
+Contrução de um algoritmo para controle bovino
+
+Em uma fazenda os gados são marcados com números inteiros. O fazendeiro em questão possui uma quantidade de 42 gados e precisa fazer uma separação em dois campos de pastagens distintos. Para isso ele decidiu colocar os gados com marcação de números pares no pasto de número 1 e gados com números impares no pasto 2. Você com ideia de automatizar essa separação e propôs a criação de um algoritmo que faz a leitura dos números dos 42 gados e separa por ímpar ou par em dois vetores distintos, após a leitura mostre na tela os dois vetores, pois eles que indicarão qual gado deverá ir para qual pasto.
+
+Regras:
+1 - O algoritmo poderá considerar que o usuário não irá repetir o número do gado na leitura.
+2 - Os vetores devem armazenar os números de forma sequencial, ou seja não poderá pular posições em seu armazenamento.
+
+​*ATENÇÃO
+O algoritmo deve ser escrito em pseudocódigo (portugol) e submetido para correção em formato txt (documento de texto – notepad) ou doc (documento do Microsoft Word). Algoritmos sem indentação terão desconto em pontuação. Serão avaliadas a corretude semântica e sintática, bem como a eficiência do código.
+​
+
+​Orientações:
+- A entrega de sua atividade deve ser feita exclusivamente por meio de UM único arquivo nos formatos .DOC ou PDF. 
+- Antes de enviar sua atividade, certifique-se de que respondeu todas as perguntas da atividade e que não deixou de atender nenhum detalhe. Após o envio não serão permitidas alterações. Por favor, não insista.
+- Sempre que você consultar outros materiais e/ou conteúdos de terceiros, lembre-se de citá-los corretamente atribuindo as devidas autorias, bem como inclua as fontes bibliográficas.
+- Evite compartilhar sua resolução com colegas da turma. A expressão do aprendizado é pessoal e única de cada estudante. Preserve sua autoria e evite transtornos na replicação de sua resposta.
+- A interpretação da atividade faz parte da avaliação. Por este motivo, não são permitidas correções parciais da atividade no decorrer do módulo.
+- Atenção ao PRAZO de entrega da atividade. Sugerimos que envie sua atividade antes do prazo final para evitar transtornos e lentidão nos servidores.
+
+Boa atividade!
